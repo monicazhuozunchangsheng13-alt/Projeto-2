@@ -1,14 +1,17 @@
-#include <WiFi.h>
-#include <WebServer.h>
+#include <WiFi.h>// permite que ESP32 conectar-se ao roteador e obter IP
+#include <WebServer.h>//Fornece as funções necessárias para criar um servidor HTTP, permitindo que o ESP32 receba comando de navegadore
 
-
+//O ESP32 precisa deles para se autenticar no roteador.
 const char* ssid = "WIFI"; 
 const char* password = "79296000";
 
+//Cria o servidor web escutando na porta 80, que é a porta padrão para navegação HTTP.
 WebServer server(80);
 
+// Pino do LED configurado para o pino 25
 const int ledPin = 25;
 
+// Função da página principal (HTML)
 void handleRoot() {
   String html = "<!DOCTYPE html><html>";
   html += "<head><meta name='viewport' content='width=device-width, initial-scale=1.0'>";
@@ -22,9 +25,10 @@ void handleRoot() {
   html += "<p><a class='btn off' href='/apagar'>Apagar LED</a></p>";
   html += "</body></html>";
   
-  server.send(200, "text/html", html);
+  server.send(200, "text/html", html);//envia a página de volta para o navegador com o código de sucesso
 }
 
+// Função para acender o LED
 void handleLedOn() {
   digitalWrite(ledPin, HIGH);
   Serial.println("Comando recebido: LED Ligado");
@@ -32,6 +36,7 @@ void handleLedOn() {
   server.send(303); 
 }
 
+// Função para apagar o LED
 void handleLedOff() {
   digitalWrite(ledPin, LOW);
   Serial.println("Comando recebido: LED Desligado");
@@ -70,8 +75,7 @@ void setup() {
     Serial.println("\n[SUCESSO] Wi-Fi conectado!!!");
     Serial.print("-> Copie este IP e digite no navegador: ");
     Serial.println(WiFi.localIP());
-    
- 
+
     server.on("/", HTTP_GET, handleRoot);
     server.on("/acender", HTTP_GET, handleLedOn);
     server.on("/apagar", HTTP_GET, handleLedOff);
@@ -86,6 +90,7 @@ void setup() {
 }
 
 void loop() {
+
   if (WiFi.status() == WL_CONNECTED) {
     server.handleClient();
   }
