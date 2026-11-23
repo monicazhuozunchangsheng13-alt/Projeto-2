@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de aprendizagem do Ensino Médio Técnico.">
+  <title>Projeto em Destaque | Minha Trajetória</title>
+  <!-- Folha de estilos compartilhada. O caminho muda nas páginas dentro de /paginas. -->
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+<!-- CABEÇALHO E MENU PRINCIPAL: o menu horizontal usa display:flex no CSS. -->
+<header class="site-header">
+  <a class="marca" href="../index.html">Minha Trajetória<small>Portfólio de Aprendizagem • Ensino Médio Técnico</small></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+  <nav aria-label="Navegação principal">
+    <ul class="menu-horizontal" id="menu-principal">
+      <li><a href="../index.html">Início</a></li><li><a href="areas-do-saber.html">Áreas do Saber</a></li><li><a href="formacao-tecnica.html" aria-current="page">Formação Técnica</a></li><li><a href="curriculo.html">Currículo</a></li><li><a href="memorias.html">Memórias</a></li><li><a href="jornada.html">Jornada</a></li><li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <p class="eyebrow">Projeto em destaque</p><h1>Mini Fábrica Inteligente</h1>
+  <p class="subtitulo">Modelo de página para documentar um projeto técnico do início à apresentação.</p>
+  <section class="hero">
+    <div><h2>O desafio</h2><p style="text-align: justify;">Demonstrar na prática como a Internet das Coisas (IoT) pode ser aplicada numa maquete de casa inteligente em miniatura, integrando automação de acessos, circulação interna, interatividade e monitorização de dispositivos numa residência.Onde maioria das problemas são do programação ou seja no codigo, so consiguimos resolver com a orientação e ajudar do Prof.Glauco.</p>
+      <h2>Objetivo</h2><p style="text-align: justify;">Desenvolver uma maquete de casa inteligente em madeira com módulos automatizados, que inclui a escada rolante, câmera com captura/reconhecimento facial, elevador e alto-falante e ligados a microcontroladores e acompanhados num dashboard, como o Blyn, validando o funcionamento de cada sistema e a integração dos dados. </p>
+      <div class="etiquetas"><span class="etiqueta">Programação</span><span class="etiqueta">IoT</span><span class="etiqueta">Banco de Dados</span><span class="etiqueta">Trabalho em equipe</span></div><span class="etiqueta">Comunicação</span><span class="etiqueta">Casa inteligente</span>
+    </div>
+    <img class="hero-foto" src="../imagens/iot3.png" alt="Imagem ilustrativa de um protótipo de robótica">
+  </section>
+  <section class="grade-cards">
+    <article class="card"><h3>1. Planejamento</h3><p style="text-align: justify;">Definição dos módulos da casa inteligente (escada rolante, câmera, elevador e alto-falante), levantamento de componentes eletrónicos e ferramentas (ESP32, ESP32-CAM, Arduino, sensores infravermelhos, botões, ponte H, motor DC, LEDs, resistores, protoboards, jumpers, cartão SD, solda, Arduino IDE, App Inventor e Blynk) e divisão de tarefas pelo grupo. </p></article>
+    <article class="card"><h3>2. Construção</h3><p style="text-align: justify;">Montagem dos circuitos nas protoboards e na maquete em madeira, ligação dos sensores, atuadores e LEDs, e programação do ESP32 / ESP32-CAM para conexão Wi-Fi, servidor web, captura de imagens no cartão SD e controlo dos dispositivos e estados no painel.</p></article>
+    <article class="card"><h3>3. Testes</h3><p style="text-align: justify;">Verificação da montagem do cartão SD e da ligação Wi-Fi, teste de controlo de comandos (como o acionamento de LEDs e mensagens), identificação de andares no elevador e validação do acompanhamento de estados (como luzes, escada, elevador, alto-falante e reconhecimento facial) no dashboard. </p></article>
+    <article class="card"><h3>4. Resultado</h3><p style="text-align: justify;">O projeto demonstrou a integração de hardware, programação e visualização de dados numa casa inteligente em miniatura, permitindo acompanhar dispositivos e informações de utilizadores/acessos. Como limitações e melhorias futuras, destacam-se o refinamento da integração contínua entre todos os módulos físicos e o dashboard e a expansão das funcionalidades de automação e segurança. </p></article>
+  </section>
+  <section class="card"><h2>Arquivos do projeto</h2><ul><li><a href="../pdfs/Casa Inteligente iot 4.pdf" target="_blank">Abrir PDF</a></li><li><p><a href="https://ramalhonathalia1303-ctrl.github.io/casa-inteligente2/index.html" target="_blank">Acessar site </a></p></li><li><video class="video-pequeno" controls>
+<source src="../video/Casa.mp4" type="video/mp4">
+</video></li></ul></section>
+</main>
+<!-- RODAPÉ compartilhado por todas as páginas. -->
+<footer class="site-footer">
+  <p>Portfólio de Aprendizagem • Ensino Médio Técnico</p>
+  <p>Projeto educativo para registrar conhecimentos, projetos e memórias.</p>
+  <p><a style="color:#fff" href="../index.html">Voltar ao início</a></p>
+</footer>
+<script src="../js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de aprendizagem do Ensino Médio Técnico.">
+  <title>Memórias | Minha Trajetória</title>
+  <!-- Folha de estilos compartilhada. O caminho muda nas páginas dentro de /paginas. -->
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+<!-- CABEÇALHO E MENU PRINCIPAL: o menu horizontal usa display:flex no CSS. -->
+<header class="site-header">
+  <a class="marca" href="../index.html">Minha Trajetória<small>Portfólio de Aprendizagem • Ensino Médio Técnico</small></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+  <nav aria-label="Navegação principal">
+    <ul class="menu-horizontal" id="menu-principal">
+      <li><a href="../index.html">Início</a></li><li><a href="areas-do-saber.html">Áreas do Saber</a></li><li><a href="formacao-tecnica.html">Formação Técnica</a></li><li><a href="curriculo.html">Currículo</a></li><li><a href="memorias.html" aria-current="page">Memórias</a></li><li><a href="jornada.html">Jornada</a></li><li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <p class="eyebrow">Registro visual</p><h1>Minhas Memórias</h1>
+  <p class="subtitulo">Registre os momentos que fizeram parte da sua trajetória escolar. As fotos deste modelo são ilustrativas; substitua-as por imagens autorizadas.</p>
+  <section class="carrossel" data-carrossel>
+    <div class="controles-carrossel"><button type="button" data-anterior aria-label="Foto anterior">‹</button><button type="button" data-proximo aria-label="Próxima foto">›</button></div>
+    <div class="carrossel-faixa">
+      <article class="card slide"><img src="../imagens/estudante.jpg" alt="Retrato ilustrativo de estudante"><h3>Primeiros passos</h3><p style="text-align: justify;">2023- Registo de uma performance em vídeo  ou foto voltada para a expressão artística, marcando o início das atividades criativas e de apresentação ao longo da  minha trajetória no SENAC.</p></article>
+      <article class="card slide"><img src="../imagens/IMG-20251127-WA0009.jpg" alt="Grupo fictício de estudantes"><h3>Trabalho em equipe</h3><p style="text-align: justify;"> Uma maquete representando uma parte da escola com recursos de IoT, integrando iluminação LED automatizada controlada pela Alexa, sensor de presença, sensor de umidade e sistema de coleta de chuva. </p></article>
+      <article class="card slide"><img src="../imagens/danca.png" alt="Protótipo ilustrativo de robótica"> <video class="video-pequeno" controls>>
+  <source src="../video/Video Project 2.mp4" type="video/mp4"></video><video class="video-pequeno" controls><source src="../video/Escada.mp4" type="video/mp4">
+</video><h3>Projeto prático</h3><p style="text-align: justify;"> Apresentação para a mostra cultural inspirada em Milton Santos, na qual o grupo enfrentou o desafio de criar uma coreografia narrativa contando a história de uma heroína que salva o mundo, unindo expressão corporal, contextualização temática e trabalho coletivo. </p></article> <p><a href="" target="_blank">Acessar video sobre ligar led por meio app</a></p>
+      <article class="card slide"><img src="../imagens/invent.jpg" alt="Imagem ilustrativa de ambiente escolar"><img src="../imagens/tecnica.jpg"><h3>Evento ou visita</h3><p style="text-align: justify;">Participação em atividades e visitas técnicas marcantes, incluindo o evento Movimenta, a criação de um Cogumelo relaciona com circurto e as visitas técnicas à Sandvik (em Jundiaí) e à Invert Cloud, ampliando a visão sobre inovação, indústria e tecnologia na prática. </p></article>
+    </div>
+  </section>
+  <section class="card"><h2>Linha do tempo</h2><div class="linha-tempo">
+    <article class="card"><h3>1º ano</h3><p style="text-align: justify;">Adaptação ao Ensino Médio e ao curso técnico, a Internet das Coisas, descobrindo as primeiras bases das peças do Pc, lógica, trabalho em grupo e adquirir novos conhecimentos.</p></article>
+    <article class="card"><h3>2º ano</h3><p style="text-align: justify;">Desenvolvimento de projetos práticos de IoT, montagem de maquetes automatizadas com sensores, LEDs e Alexa, participação em mostras culturais e na feira de ciência com os conhecimentos do primeiro ano.</p></article>
+    <article class="card"><h3>3º ano</h3><p style="text-align: justify;">Consolidação dos conhecimentos técnicos, como a criação do página de site (HTMl) e visitas técnicas,  escolares, finalização dos projetos em grupo e preparação para o ingresso na faculdade na área de negócios, gestão e tecnologia.</p></article>
+  </div></section>
+  <p><strong>Privacidade:</strong> publique apenas fotos e vídeos próprios ou autorizados, especialmente quando outras pessoas aparecerem.</p>
+</main>
+<!-- RODAPÉ compartilhado por todas as páginas. -->
+<footer class="site-footer">
+  <p>Portfólio de Aprendizagem • Ensino Médio Técnico</p>
+  <p>Projeto educativo para registrar conhecimentos, projetos e memórias.</p>
+  <p><a style="color:#fff" href="../index.html">Voltar ao início</a></p>
+</footer>
+<script src="../js/site.js"></script>
+</body>
+</html>

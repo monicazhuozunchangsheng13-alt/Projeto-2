@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de aprendizagem do Ensino Médio Técnico.">
+  <title>Página Inicial | Minha Trajetória</title>
+  <!-- Folha de estilos compartilhada. O caminho muda nas páginas dentro de /paginas. -->
+  <link rel="stylesheet" href="css/estilo.css">\n  <link rel="stylesheet" href="css/modelos-cv-index.css">
+</head>
+<body>
+<!-- CABEÇALHO E MENU PRINCIPAL: o menu horizontal usa display:flex no CSS. -->
+<header class="site-header">
+  <a class="marca" href="index.html">Minha Trajetória<small>Portfólio de Aprendizagem • Ensino Médio Técnico</small></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+  <nav aria-label="Navegação principal">
+    <ul class="menu-horizontal" id="menu-principal">
+      <li><a href="index.html" aria-current="page">Início</a></li><li><a href="paginas/areas-do-saber.html">Áreas do Saber</a></li><li><a href="paginas/formacao-tecnica.html">Formação Técnica</a></li><li><a href="paginas/curriculo.html">Currículo</a></li><li><a href="paginas/memorias.html">Memórias</a></li><li><a href="paginas/jornada.html">Jornada</a></li><li><a href="paginas/contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <!-- DESTAQUE PRINCIPAL: personalize nome, curso, turma e texto. -->
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Meu portfólio pessoal</p>
+      <h1>Olá! Eu sou a Monica Zhuozun Changsheng</h1>
+      <h2>Estudante do Ensino Médio Técnico </h2>
+      <p>Este espaço é meu portfólio de aprendizagem. Aqui registro minha trajetória, os conhecimentos que desenvolvo, meus projetos e os momentos importantes da vida escolar.</p>
+      <p><strong>Curso:</strong> Internet Das Coisas<br><strong>Turma:</strong> 3º ano IOT04  <strong>Instituição:</strong> SENAC NAÇÕES UNIDAS</p>
+      <a class="botao" href="paginas/areas-do-saber.html">Conheça minhas áreas de estudo →</a>
+      <a class="botao secundario" href="paginas/curriculo.html">Ver currículo</a>
+    </div>
+    <img class="hero-foto" src="imagens/inciol.jpg" alt="Foto ilustrativa de um estudante fictício">
+  </section>
+
+  <!-- CARROSSEL HORIZONTAL: cartões lado a lado; use as setas para rolar. -->
+  <section>
+    <h2>Explore meu portfólio</h2>
+    <p class="subtitulo">Carrossel horizontal: deslize para os lados ou use os botões de navegação.</p>
+    <div class="carrossel" data-carrossel>
+      <div class="controles-carrossel">
+        <button type="button" data-anterior aria-label="Cartão anterior">‹</button>
+        <button type="button" data-proximo aria-label="Próximo cartão">›</button>
+      </div>
+      <div class="carrossel-faixa">
+        <article class="card slide">
+          <img src="imagens/aula.png" alt="Livros e material de estudo">
+          <h3>Áreas do Saber</h3><p>Registros das disciplinas e dos aprendizados da formação geral.</p>
+          <a class="botao" href="paginas/areas-do-saber.html">Ver áreas</a>
+        </article>
+        <article class="card slide">
+          <img src="imagens/iot.1.png" alt="Exemplo ilustrativo de programação">
+          <h3>Formação Técnica</h3><p>Projetos de programação, banco de dados, automação e tecnologia.</p>
+          <a class="botao" href="paginas/formacao-tecnica.html">Ver projetos</a>
+        </article>
+        <article class="card slide">
+          <img src="imagens/estudante.jpg" alt="Retrato ilustrativo do estudante">
+          <h3>Meu Currículo</h3><p>Formação, habilidades, experiências e certificados.</p>
+          <a class="botao" href="paginas/curriculo.html">Abrir currículo</a>
+        </article>
+        <article class="card slide">
+          <img src="imagens/memoria.jpg" alt="Grupo fictício de estudantes">
+          <h3>Memórias</h3><p>Momentos especiais, atividades, eventos e trabalhos em equipe.</p>
+          <a class="botao" href="paginas/memorias.html">Ver memórias</a>
+        </article>
+        <article class="card slide">
+          <img src="imagens/casa.png" alt="Projeto ilustrativo de robótica">
+          <h3>Projeto em destaque</h3><p>Um projeto marcante explicado passo a passo.</p>
+          <a class="botao" href="paginas/projeto-destaque.html">Conhecer projeto</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARROSSEL VERTICAL: cartões empilhados e roláveis de cima para baixo. -->
+  <section class="grade-cards">
+    <div>
+      <h2>Minha jornada em etapas</h2>
+      <p class="subtitulo">Carrossel vertical: use as setas para percorrer as etapas.</p>
+      <div data-carrossel-vertical>
+        <div class="controles-vertical">
+          <button type="button" data-subir aria-label="Etapa anterior">↑</button>
+          <button type="button" data-descer aria-label="Próxima etapa">↓</button>
+        </div>
+        <div class="carrossel-vertical">
+          <article class="slide-vertical">
+            <p class="eyebrow">Etapa 1</p><h3>Descobrir</h3>
+            <p style="text-align: justify;"> No inicio do Esino Médio no SENAC era uma rotina mais suave e autonoma. Conhecer às novas disciplinas e enteder o curso de IOT que sobre enteder as peças da PC, o cirtuito e praticando com arduino UNO </p>
+          </article>
+          <article class="slide-vertical">
+            <p class="eyebrow">Etapa 2</p><h3>Experimentar</h3>
+            <p style="text-align: justify;">O segundo  ano aprofudou os contenudos e o desenvolvimento de habilidades na pratica, como a maquete do primeiro academico infererior, a nasa, e  na feira de ciência(fabrica abandonado, o sistema de filtragem de água) aprendemos durantes o desenvolvimento dos projetos tem que organizar todos os cronogramas certinho para não ocorrer erro.</p>
+          </article>
+          <article class="slide-vertical">
+            <p class="eyebrow">Etapa 3</p><h3>Criar</h3>
+            <p style="text-align: justify;">Durante o ensino medio, densivolvi muito projeto com meus colegas da sala, ums dos trabalhos mais marcante era ligar led por meio de web ou aplicativo, mostrando como funciona na casa automatizada, simulando por meio do esp 32 e aprender a criar aplicativo para controlar os leds.</p>
+          </article>
+          <article class="slide-vertical">
+            <p class="eyebrow">Etapa 4</p><h3>Compartilhar</h3>
+            <p style="text-align: justify;"> No final realizamos uma mini casa com o projeto anterior e acrescentando com outros trabalhos , como elevador e escada rolante com base no conhecimento que aprendemos na sala de aula.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+    <article class="card">
+      <h2>Meu objetivo</h2>
+      <p style="text-align: justify;">Quero aprender linguagens de programação, espsificamente o python e java e tanto outros idiomas na áreas de tecnologia e de comercio e no futuro usara esses conhecimento para ajuda o  nosso pais na Tecnologia.</p>
+      <h3>Competências em desenvolvimento</h3>
+      <div class="etiquetas">
+        <span class="etiqueta">HTML</span><span class="etiqueta">CSS</span>
+        <span class="etiqueta">Programação</span><span class="etiqueta">Trabalho em equipe</span>
+        <span class="etiqueta">Resolução de problemas</span><span class="etiqueta">Gestão de tempo</span>
+        <span class="etiqueta">Autocontrole</span><span class="etiqueta">Comunicação</span>
+      </div>
+    </article>
+  </section>
+
+
+  <!-- GALERIA DE MODELOS DE CURRÍCULO: cinco modelos A4 retrato e dois A4 paisagem. -->
+  <section class="secao-modelos-cv" aria-labelledby="titulo-modelos-cv">
+    <h2 id="titulo-modelos-cv">Modelos de currículo para imprimir ou baixar</h2>
+    <p>Explore os sete modelos inspirados no PDF de referência. Os cinco primeiros usam A4 retrato; os dois últimos usam A4 paisagem. Cada modelo tem um PDF para baixar e opção de impressão.</p>
+    <div class="grade-modelos-cv">
+      <article class="card-modelo-cv">
+        <span class="etiqueta-modelo">A4 Retrato</span>
+        <h3>CV 1 — Sidebar azul</h3>
+        <p>Estudante de Tecnologia | Desenvolvimento de Sistemas</p>
+        <a class="link-modelo-cv" href="paginas/modelo-cv-1.html">Abrir modelo</a>
+        <a class="link-pdf-cv" href="pdfs/modelo-cv-1.pdf" download>Baixar arquivo PDF</a>
+      </article>
+      <article class="card-modelo-cv">
+        <span class="etiqueta-modelo">A4 Retrato</span>
+        <h3>CV 2 — Clássico azul</h3>
+        <p>Estudante de Desenvolvimento de Sistemas</p>
+        <a class="link-modelo-cv" href="paginas/modelo-cv-2.html">Abrir modelo</a>
+        <a class="link-pdf-cv" href="pdfs/modelo-cv-2.pdf" download>Baixar arquivo PDF</a>
+      </article>
+      <article class="card-modelo-cv">
+        <span class="etiqueta-modelo">A4 Retrato</span>
+        <h3>CV 3 — Compacto escuro</h3>
+        <p>Jovem aprendiz | Tecnologia e suporte</p>
+        <a class="link-modelo-cv" href="paginas/modelo-cv-3.html">Abrir modelo</a>
+        <a class="link-pdf-cv" href="pdfs/modelo-cv-3.pdf" download>Baixar arquivo PDF</a>
+      </article>
+      <article class="card-modelo-cv">
+        <span class="etiqueta-modelo">A4 Retrato</span>
+        <h3>CV 4 — Minimalista verde</h3>
+        <p>Estudante | Coordenação de projetos escolares</p>
+        <a class="link-modelo-cv" href="paginas/modelo-cv-4.html">Abrir modelo</a>
+        <a class="link-pdf-cv" href="pdfs/modelo-cv-4.pdf" download>Baixar arquivo PDF</a>
+      </article>
+      <article class="card-modelo-cv">
+        <span class="etiqueta-modelo">A4 Retrato</span>
+        <h3>CV 5 — Cabeçalho em destaque</h3>
+        <p>Currículo profissional</p>
+        <a class="link-modelo-cv" href="paginas/modelo-cv-5.html">Abrir modelo</a>
+        <a class="link-pdf-cv" href="pdfs/modelo-cv-5.pdf" download>Baixar arquivo PDF</a>
+      </article>
+      <article class="card-modelo-cv">
+        <span class="etiqueta-modelo">A4 Paisagem</span>
+        <h3>CV 6 — Currículo em duas colunas</h3>
+        <p>Estudante de Desenvolvimento de Sistemas | Front-End • IoT • Java • Python • Banco de Dados</p>
+        <a class="link-modelo-cv" href="paginas/modelo-cv-6.html">Abrir modelo</a>
+        <a class="link-pdf-cv" href="pdfs/modelo-cv-6.pdf" download>Baixar arquivo PDF</a>
+      </article>
+      <article class="card-modelo-cv">
+        <span class="etiqueta-modelo">A4 Paisagem</span>
+        <h3>CV 7 — Portfólio horizontal</h3>
+        <p>Estudante de Desenvolvimento de Sistemas</p>
+        <a class="link-modelo-cv" href="paginas/modelo-cv-7.html">Abrir modelo</a>
+        <a class="link-pdf-cv" href="pdfs/modelo-cv-7.pdf" download>Baixar arquivo PDF</a>
+      </article>
+    </div>
+  </section>
+</main>
+<!-- RODAPÉ compartilhado por todas as páginas. -->
+<footer class="site-footer">
+  <p>Portfólio de Aprendizagem • Ensino Médio Técnico</p>
+  <p>Projeto educativo para registrar conhecimentos, projetos e memórias.</p>
+  <p><a style="color:#fff" href="index.html">Voltar ao início</a></p>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

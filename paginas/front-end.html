@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de aprendizagem do Ensino Médio Técnico.">
+  <title>Front-End | Minha Trajetória</title>
+  <!-- Folha de estilos compartilhada. O caminho muda nas páginas dentro de /paginas. -->
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+<!-- CABEÇALHO E MENU PRINCIPAL: o menu horizontal usa display:flex no CSS. -->
+<header class="site-header">
+  <a class="marca" href="../index.html">Minha Trajetória<small>Portfólio de Aprendizagem • Ensino Médio Técnico</small></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+  <nav aria-label="Navegação principal">
+    <ul class="menu-horizontal" id="menu-principal">
+      <li><a href="../index.html">Início</a></li><li><a href="areas-do-saber.html">Áreas do Saber</a></li><li><a href="formacao-tecnica.html" aria-current="page">Formação Técnica</a></li><li><a href="curriculo.html">Currículo</a></li><li><a href="memorias.html">Memórias</a></li><li><a href="jornada.html">Jornada</a></li><li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <p class="eyebrow">Formação técnica</p><h1>Front-End</h1>
+  <p class="subtitulo">Exemplo de página técnica para explicar as tecnologias estudadas e registrar evidências de prática.</p>
+  <section class="grade-cards">
+    <article class="card"><h3>HTML</h3><p>Organiza a estrutura e o significado do conteúdo da página.</p><pre><code>&lt;h1&gt;Meu projeto&lt;/h1&gt;</code></pre></article>
+    <article class="card"><h3>CSS</h3><p>Controla cores, tipografia, espaçamento e layout.</p><pre><code>.card { padding: 16px; }</code></pre></article>
+    <article class="card"><h3>JavaScript</h3><p>Adiciona comportamento e interatividade aos elementos.</p><pre><code>botao.addEventListener("click", ...);</code></pre></article>
+  </section>
+  <section class="card"><h2>Meu exercício</h2><p style="text-align: justify;">Durante as aulas, criei várias páginas de prática em HTML e CSS — como index, Exemplos, tabela, pesquisa e menu — para consolidar os fundamentos do desenvolvimento front-end. Utilizei elementos estruturais e de texto, listas ordenadas e não ordenadas imagens, formulários e menus de navegação com hiperligações. Também apliquei estilos com CSS interno e externo para trabalhar cores, tipografia, espaçamentos, esquemas de cores e menus dropdown. Com esta prática, aprendi a estruturar páginas web de forma organizada, a ligar diferentes ficheiros e a ter atenção a detalhes como a sintaxe das etiquetas, os caminhos dos ficheiros e a ordem das regras CSS. 
+Tambem outro arqivo onde o professor mandou os exemplos básicos de JavaScript para demonstrar a lógica de programação e a interatividade nas páginas web. Os códigos abordaram alertas, entrada de dados, funções com e sem parâmetros, variáveis, operadores matemáticos, estruturas condicionais, laços de repetição, vetores, objetos e manipulação do DOM. Acompanhar estes exemplos do professor ajudou-me a compreender como o JavaScript dá comportamento dinâmico às páginas e como ligar o código ao HTML. </p><img class="hero-foto" src="../imagens/iot.2.png" alt="Imagem ilustrativa de código de programação"></section>
+</main>
+<!-- RODAPÉ compartilhado por todas as páginas. -->
+<footer class="site-footer">
+  <p>Portfólio de Aprendizagem • Ensino Médio Técnico</p>
+  <p>Projeto educativo para registrar conhecimentos, projetos e memórias.</p>
+  <p><a style="color:#fff" href="../index.html">Voltar ao início</a></p>
+</footer>
+<script src="../js/site.js"></script>
+</body>
+</html>
