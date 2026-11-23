@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea, button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ffca28;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ffb300;
+}
+
+.user-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-bar button {
+  width: auto;
+  background-color: #e0e0e0;
+}
+
+.card-recado {
+  background: #fff9c4;
+  padding: 12px;
+  margin-top: 10px;
+  border-left: 5px solid #fbc02d;
+  border-radius: 4px;
+}
+
+.card-recado small {
+  display: block;
+  color: #666;
+  margin-top: 5px;
+}
+
+.card-recado button {
+  background-color: #ff5252;
+  color: white;
+  width: auto;
+  padding: 4px 8px;
+  font-size: 12px;
+}

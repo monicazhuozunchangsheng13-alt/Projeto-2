@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural de Recado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mural de Recado</h1>
+       <div id ="auth- container">
+        <h2 id ="auth-title">Login</h2>
+        <div><input type="email" id="email" placeholder="Seu e-mail"><div>
+        <input type="password" id="password" placeholder="Sua senha">
+        <div class="button-container">
+           <div> <button id="login-button">Entrar</button></div>
+            <div><button id="register-button">Registrar</button></div>
+        </div>
+    </div>  
+
+    <div id="app-conntainer"style="display: none;">
+        <h2>Bem-vindo ao Mural de Recado</h2>
+        <div class="user-bar">
+            <span> Conectado como:<strong id ="user-email"> </strong> <span>>
+            <button id="logout-button">Sair</button>
+    </div>
+    <div class="form-recado">
+        <h3>Novo Recado</h3>
+        <input type="text" id="recado-titulo" placeholder="Título da mensagem">
+        <textearea id="recardo-mensagem" placeholder="Escreve seu recardo aqui..."></textearea>
+        <button id="save-button">Publicar Recado</button>
+        </div>
+
+        <h3>Recados do Mural</h3>
+        <div id="mural-list"></div>
+        </div>
+        </div>
+
+        <script type="module" src="app.js"></script>
+        
+            
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mural de Recados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📌 Mural de Recados</h1>
+
+    <!-- ÁREA DE AUTENTICAÇÃO -->
+    <div id="auth-container">
+      <h2 id="auth-title">Login</h2>
+      <input type="email" id="email" placeholder="Seu e-mail">
+      <input type="password" id="password" placeholder="Sua senha">
+      <div class="auth-buttons">
+        <button id="btn-login">Entrar</button>
+        <button id="btn-register">Criar Conta</button>
+      </div>
+    </div>
+
+    <!-- ÁREA DO MURAL (Exibida somente após o login) -->
+    <div id="app-container" style="display: none;">
+      <div class="user-bar">
+        <span>Conectado como: <strong id="user-email"></strong></span>
+        <button id="btn-logout">Sair</button>
+      </div>
+
+      <!-- Formulário para Criar Recado -->
+      <div class="form-recado">
+        <h3>Novo Recado</h3>
+        <input type="text" id="recado-titulo" placeholder="Título da mensagem">
+        <textarea id="recado-texto" placeholder="Escreva seu recado aqui..."></textarea>
+        <button id="btn-salvar">Publicar Recado</button>
+      </div>
+
+      <!-- Lista onde os recados vão aparecer -->
+      <h3>Recados do Mural</h3>
+      <div id="mural-list"></div>
+    </div>
+  </div>
+
+  <!-- SDK do Firebase (Versão Modular via CDN) -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
